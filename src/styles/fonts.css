@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "HerbalifeNatural";
+  src: url("/public/assets/fonts/HerbalifeNatural-Bold.otf") format("otf");
+  font-weight: bold; /* 700 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HerbalifeNatural";
+  src: url("/public/assets/fonts/HerbalifeNatural-Light.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HerbalifeNatural";
+  src: url("/public/assets/fonts/HerbalifeNatural-Medium.woff2") format("woff2"),
+    url("/fonts/MyCustomFont.woff") format("woff");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HerbalifeNatural";
+  src: url("/public/assets/fonts/HerbalifeNatural-Regular.otf") format("otf");
+  font-weight: normal; /* 400 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HerbalifeWalsheimGT-Rg";
+  src: url("/public/assets/fonts/HerbalifeWalsheimGT-Rg.woff2") format("woff2");
+  font-weight: normal; /* 400 */
+  font-style: normal;
+}
+
+.font-herbalife-walsheim {
+  font-family: "HerbalifeWalsheimGT-Rg", sans-serif;
+}
