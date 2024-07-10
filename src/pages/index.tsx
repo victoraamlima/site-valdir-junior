@@ -369,7 +369,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-cor-burgundy px-[5vw] pb-20 flex flex-col justify-between gap-20 max-lg:gap-20">
+        <div className="bg-cor-burgundy px-[5vw] pb-32 flex flex-col justify-between gap-20 max-lg:gap-20">
           <div className="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16">
             <div className="flex flex-col gap-20 max-lg:w-full">
               <img
