@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useWindowWidth from "./useWindowWidth";
+import {useWindowWidth} from "./useWindowWidth";
 
 export default function useElementTop(elementId: string): number {
   const [scrollYPopupBtn, setScrollYPopupBtn] = useState<number>(0);
@@ -7,8 +7,8 @@ export default function useElementTop(elementId: string): number {
   const windowWidth = useWindowWidth();
 
   useEffect(() => {
-    const element = document.getElementById(elementId);
-    const elementTop = element ? element.offsetTop : 0;
+    const element: HTMLElement | null = document.getElementById(elementId);
+    const elementTop: number = element ? element.offsetTop : 0;
     setScrollYPopupBtn(elementTop);
   }, [windowWidth]);
 
