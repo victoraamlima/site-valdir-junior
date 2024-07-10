@@ -123,11 +123,21 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-img bg-img-1 w-1/2 h-[600px] max-2md:w-full max-2md:bg-center" />
+          <div
+            className="w-1/2 h-[600px] bg-cover bg-no-repeat max-2md:w-full max-2md:bg-center"
+            style={{
+              backgroundImage: "url('./assets/images/shape-control-1.png')",
+            }}
+          />
         </div>
 
         <div className="flex gap-[3vw] justify-between max-2md:flex-col-reverse">
-          <div className="bg-img bg-img-2 w-full min-w-[40%]" />
+          <div
+            className="bg-cover bg-no-repeat w-full min-w-[40%]"
+            style={{
+              backgroundImage: "url('./assets/images/shape-control-2.png')",
+            }}
+          />
 
           <div className="flex-center flex-col pr-[2vw] py-16 gap-[3vw] max-2md:pr-0 max-2md:py-7 max-2md:gap-10">
             <div className="flex flex-wrap gap-[1vw] justify-between max-2md:flex-col max-2md:items-center max-2md:text-center font-light">
@@ -171,7 +181,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex bg-img bg-img-3 w-full h-full min-h-[790px] justify-between items-center max-xl:flex-col px-5">
+        <div
+          className="flex w-full h-full min-h-[790px] justify-between items-center bg-cover bg-no-repeat max-xl:flex-col px-5"
+          style={{
+            backgroundImage: "url('./assets/images/bg-shape-3.png')",
+          }}
+        >
           <div className="text-white pl-[4vw] py-20 flex flex-col gap-6 w-1/2 max-xl:px-0 max-xl:w-full max-xl:items-center max-xl:text-center max-xl:py-10">
             <div>
               <h2 className="font-bold text-[45px] leading-[1] max-lg:text-[43px] max-sm:text-3xl">
@@ -262,7 +277,7 @@ export default function Home() {
             <h3 className="text-[40px] text-lime-600 font-bold max-xl:text-3xl">
               Procedência:
             </h3>
-            <div className="text-2xl w-[450px] max-lg:w-full text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px]">
+            <div className="text-2xl w-[450px] max-lg:w-full max-lg:text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px]">
               <p>
                 Ativo natural obtido do suco das Laranjas Vermelhas Moro,
                 cultivadas ao redor do vulcão Etna na Sicília, Itália.
