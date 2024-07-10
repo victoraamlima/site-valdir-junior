@@ -24,25 +24,25 @@ exports[`Index page should render without throwing an error 1`] = `
         class="absolute left-16 flex gap-5 max-xl:left-12 max-2md:static"
       >
         <a
-          href="http://"
+          href="https://wa.link/hvz4yq"
           rel="noopener noreferrer"
           target="_blank"
         >
           <img
             alt="logo do whatsapp"
             class="w-20 max-xl:w-16"
-            src="/assets/images/logo-whatsapp.png"
+            src="./assets/images/logo-whatsapp.png"
           />
         </a>
         <a
-          href="http://"
+          href="https://www.instagram.com/evs.shakeup/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <img
             alt="logo do instagram"
             class="w-20 max-xl:w-16"
-            src="/assets/images/logo-instagram.png"
+            src="./assets/images/logo-instagram.png"
           />
         </a>
       </div>
@@ -63,7 +63,7 @@ exports[`Index page should render without throwing an error 1`] = `
       <img
         alt="Embalagem shape control"
         class="max-w-[50%] max-2md:max-w-[90%]"
-        src="/assets/images/shape-control.webp"
+        src="./assets/images/shape-control.webp"
       />
       <div
         class="flex flex-col justify-between w-full items-center gap-40 text-center"
@@ -103,12 +103,12 @@ exports[`Index page should render without throwing an error 1`] = `
                 <img
                   alt="pix"
                   class="h-10 mb-2 max-xl:h-7"
-                  src="/assets/images/pix.png"
+                  src="./assets/images/pix.png"
                 />
                 <img
                   alt="boleto"
                   class="h-10 mb-2 max-xl:h-7"
-                  src="/assets/images/boleto-2.png"
+                  src="./assets/images/boleto-2.png"
                 />
               </div>
             </div>
@@ -118,7 +118,7 @@ exports[`Index page should render without throwing an error 1`] = `
               <img
                 alt="cartão"
                 class="h-10 mb-1 max-xl:h-7"
-                src="/assets/images/cartao.png"
+                src="./assets/images/cartao.png"
               />
               <h3
                 class="text-4xl font-light max-xl:text-2xl"
@@ -191,14 +191,16 @@ exports[`Index page should render without throwing an error 1`] = `
         </div>
       </div>
       <div
-        class="bg-img bg-img-1 w-1/2 h-[600px] max-2md:w-full max-2md:bg-center"
+        class="w-1/2 h-[600px] bg-cover bg-no-repeat max-2md:w-full max-2md:bg-center"
+        style="background-image: url(./assets/images/shape-control-1.png);"
       />
     </div>
     <div
       class="flex gap-[3vw] justify-between max-2md:flex-col-reverse"
     >
       <div
-        class="bg-img bg-img-2 w-full min-w-[40%]"
+        class="bg-cover bg-no-repeat w-full min-w-[40%]"
+        style="background-image: url(./assets/images/shape-control-2.png);"
       />
       <div
         class="flex-center flex-col pr-[2vw] py-16 gap-[3vw] max-2md:pr-0 max-2md:py-7 max-2md:gap-10"
@@ -212,7 +214,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-4.png"
+              src="./assets/images/ico-sha-4.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -226,7 +228,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-04.png"
+              src="./assets/images/ico-sha-04.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -240,7 +242,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-05.png"
+              src="./assets/images/ico-sha-05.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -254,7 +256,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-06.png"
+              src="./assets/images/ico-sha-06.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -268,7 +270,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-08.png"
+              src="./assets/images/ico-sha-08.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -282,7 +284,7 @@ exports[`Index page should render without throwing an error 1`] = `
             <img
               alt="icon"
               class="w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7"
-              src="/assets/images/ico-sha-07.png"
+              src="./assets/images/ico-sha-07.png"
             />
             <p
               class="max-2xl:text-sm"
@@ -313,7 +315,8 @@ exports[`Index page should render without throwing an error 1`] = `
       </div>
     </div>
     <div
-      class="flex bg-img bg-img-3 w-full h-full min-h-[790px] justify-between items-center max-xl:flex-col px-5"
+      class="flex w-full h-full min-h-[790px] justify-between items-center bg-cover bg-no-repeat max-xl:flex-col px-5"
+      style="background-image: url(./assets/images/bg-shape-3.png);"
     >
       <div
         class="text-white pl-[4vw] py-20 flex flex-col gap-6 w-1/2 max-xl:px-0 max-xl:w-full max-xl:items-center max-xl:text-center max-xl:py-10"
@@ -378,7 +381,7 @@ exports[`Index page should render without throwing an error 1`] = `
       <img
         alt="Produto shape control e uma laranja moro"
         class="w-1/2 h-full"
-        src="/assets/images/shape-control-04.png"
+        src="./assets/images/shape-control-04.png"
       />
     </div>
     <div
@@ -397,7 +400,7 @@ exports[`Index page should render without throwing an error 1`] = `
         >
           <img
             alt="morosil logo"
-            src="/assets/images/morosil.png"
+            src="./assets/images/morosil.png"
           />
           <p
             class="text-[22px] mt-3 font-herbalife-walsheim max-xl:text-[18px]"
@@ -409,7 +412,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt="segurança, procedência e eficácia"
             class="max-w-[260px]"
-            src="/assets/images/letter-sha-1.png"
+            src="./assets/images/letter-sha-1.png"
           />
           <p
             class="text-xs mt-3"
@@ -433,7 +436,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt="bandeiras: anvisa - brasil, fda eua, health canada, kfda - coreia"
             class="w-[232px]"
-            src="/assets/images/bandeiras-2.png"
+            src="./assets/images/bandeiras-2.png"
           />
         </div>
       </div>
@@ -446,7 +449,7 @@ exports[`Index page should render without throwing an error 1`] = `
           Procedência:
         </h3>
         <div
-          class="text-2xl w-[450px] max-lg:w-full text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px]"
+          class="text-2xl w-[450px] max-lg:w-full max-lg:text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px]"
         >
           <p>
             Ativo natural obtido do suco das Laranjas Vermelhas Moro, cultivadas ao redor do vulcão Etna na Sicília, Itália.
@@ -471,7 +474,7 @@ exports[`Index page should render without throwing an error 1`] = `
         <img
           alt="laranja mouro"
           class="w-[460px] mt-14 max-lg:w-80"
-          src="/assets/images/orange-2.png"
+          src="./assets/images/orange-2.png"
         />
       </div>
     </div>
@@ -517,7 +520,7 @@ exports[`Index page should render without throwing an error 1`] = `
       <img
         alt=""
         class="w-[600px] max-w-[50%] h-full max-2md:min-w-[400px] max-2sm:min-w-[300px]"
-        src="/assets/images/morosil-3.png"
+        src="./assets/images/morosil-3.png"
       />
     </div>
     <div
@@ -526,7 +529,7 @@ exports[`Index page should render without throwing an error 1`] = `
       <img
         alt=""
         class="w-[100px] self-center absolute top-0 left-40 max-2md:static max-2md:w-[80px]"
-        src="/assets/images/explore.png"
+        src="./assets/images/explore.png"
       />
       <a
         class="w-[500px] self-center cursor-pointer max-2sm:w-[300px]"
@@ -535,7 +538,7 @@ exports[`Index page should render without throwing an error 1`] = `
       >
         <img
           alt=""
-          src="/assets/images/explore-shape.png"
+          src="./assets/images/explore-shape.png"
         />
       </a>
       <div
@@ -581,12 +584,12 @@ exports[`Index page should render without throwing an error 1`] = `
         <img
           alt=""
           class="max-w-[750px] w-full max-xl:w-1/2 max-2md:self-center max-2md:w-[90%]"
-          src="/assets/images/shape-nutrev.png"
+          src="./assets/images/shape-nutrev.png"
         />
       </div>
     </div>
     <div
-      class="bg-cor-burgundy px-[5vw] pb-20 flex flex-col justify-between gap-20 max-lg:gap-20"
+      class="bg-cor-burgundy px-[5vw] pb-32 flex flex-col justify-between gap-20 max-lg:gap-20"
     >
       <div
         class="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16"
@@ -597,7 +600,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt=""
             class="w-[105px] max-lg:w-[80px] "
-            src="/assets/images/sha-10.png"
+            src="./assets/images/sha-10.png"
           />
           <h3
             class="text-6xl text-white w-[27rem] font-bold max-xl:text-5xl max-lg:w-full max-lg:text-center max-lg:text-4xl max-2sm:text-2xl"
@@ -639,7 +642,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt=""
             class="w-[86px]"
-            src="/assets/images/ico-m-1.png"
+            src="./assets/images/ico-m-1.png"
           />
           <p
             class="text-xl text-white w-72 max-lg:w-full"
@@ -659,7 +662,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt=""
             class="w-[86px]"
-            src="/assets/images/ico-m-2.png"
+            src="./assets/images/ico-m-2.png"
           />
           <p
             class="text-xl text-white w-64 max-lg:w-full"
@@ -679,7 +682,7 @@ exports[`Index page should render without throwing an error 1`] = `
           <img
             alt=""
             class="w-[86px]"
-            src="/assets/images/ico-m-3.png"
+            src="./assets/images/ico-m-3.png"
           />
           <p
             class="text-xl text-white"
