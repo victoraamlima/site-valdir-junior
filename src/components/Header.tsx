@@ -11,7 +11,7 @@ export default function Header() {
       </div>
 
       <div className="absolute left-16 flex gap-5 max-xl:left-12 max-2md:static">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.link/hvz4yq" target="_blank" rel="noopener noreferrer">
           <img
             src="./assets/images/logo-whatsapp.png"
             alt="logo do whatsapp"
@@ -19,7 +19,7 @@ export default function Header() {
           />
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/evs.shakeup/" target="_blank" rel="noopener noreferrer">
           <img
             src="./assets/images/logo-instagram.png"
             alt="logo do instagram"
