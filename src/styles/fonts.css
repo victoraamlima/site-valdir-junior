@@ -1,32 +1,31 @@
 @font-face {
   font-family: "HerbalifeNatural";
-  src: url("/assets/fonts/HerbalifeNatural-Bold.otf") format("otf");
+  src: url("./assets/fonts/HerbalifeNatural-Bold.otf") format("otf");
   font-weight: 700; /* 700 */
   font-style: normal;
 }
 @font-face {
   font-family: "HerbalifeNatural";
-  src: url("/assets/fonts/HerbalifeNatural-Light.woff2") format("woff2");
+  src: url("./assets/fonts/HerbalifeNatural-Light.woff2") format("woff2");
   font-weight: 300; /* Light */
   font-style: normal;
 }
 @font-face {
   font-family: "HerbalifeNatural";
-  src: url("/assets/fonts/HerbalifeNatural-Medium.woff2") format("woff2"),
-    url("/fonts/MyCustomFont.woff") format("woff");
+  src: url("./assets/fonts/HerbalifeNatural-Medium.woff2") format("woff2");
   font-weight: 500; /* Medium */
   font-style: normal;
 }
 @font-face {
   font-family: "HerbalifeNatural";
-  src: url("/assets/fonts/HerbalifeNatural-Regular.otf") format("otf");
+  src: url("./assets/fonts/HerbalifeNatural-Regular.otf") format("otf");
   font-weight: normal; /* 400 */
   font-style: normal;
 }
 
 @font-face {
   font-family: "HerbalifeWalsheimGT-Rg";
-  src: url("/assets/fonts/HerbalifeWalsheimGT-Rg.woff2") format("woff2");
+  src: url("./assets/fonts/HerbalifeWalsheimGT-Rg.woff2") format("woff2");
   font-weight: normal; /* 400 */
   font-style: normal;
 }
