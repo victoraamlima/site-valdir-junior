@@ -23,14 +23,14 @@ html {
 }
 
 .bg-img-1 {
-  background-image: url("/assets/images/shape-control-1.png");
+  background-image: url("./assets/images/shape-control-1.png");
 }
 .bg-img-2 {
-  background-image: url("/assets/images/shape-control-2.png");
+  background-image: url("./assets/images/shape-control-2.png");
 }
 
 .bg-img-3 {
-  background-image: url("/assets/images/bg-shape-3.png");
+  background-image: url("./assets/images/bg-shape-3.png");
 }
 
 .flex-center {
