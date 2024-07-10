@@ -2,7 +2,7 @@ import KnowMoreBtn from "@/components/KnowMoreBtn";
 import Header from "@/components/Header";
 import InfoIcon from "@/components/InfoIcon";
 import Video from "@/components/Video";
-import useScrollY from "@/hooks/useScrollY";
+import { useScrollY } from "@/hooks/useScrollY";
 import useElementTop from "@/hooks/useElementTop";
 
 export default function Home() {
