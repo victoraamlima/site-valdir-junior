@@ -2,33 +2,34 @@ import KnowMoreBtn from "@/components/KnowMoreBtn";
 import Header from "@/components/Header";
 import InfoIcon from "@/components/InfoIcon";
 import Video from "@/components/Video";
-import useScrollY from "@/hooks/useScrollY";
+import { useScrollY } from "@/hooks/useScrollY";
 import useElementTop from "@/hooks/useElementTop";
+import Image from "next/image";
 
 export default function Home() {
   let iconsSha = [
     {
-      img: "./assets/images/ico-sha-4.png",
+      img: "/assets/images/ico-sha-4.png",
       text: "Com fitonutrientes antioxidantes",
     },
     {
-      img: "./assets/images/ico-sha-04.png",
+      img: "/assets/images/ico-sha-04.png",
       text: "Potencializa os seus resultados no gerenciamento de peso",
     },
     {
-      img: "./assets/images/ico-sha-05.png",
+      img: "/assets/images/ico-sha-05.png",
       text: "Ajuda a perder a gordura corporal¹",
     },
     {
-      img: "./assets/images/ico-sha-06.png",
-      text: "	Pode ajudar a reduzir a circunferência do quadril e da cintura²",
+      img: "/assets/images/ico-sha-06.png",
+      text: "Pode ajudar a reduzir a circunferência do quadril e da cintura²",
     },
     {
-      img: "./assets/images/ico-sha-08.png",
+      img: "/assets/images/ico-sha-08.png",
       text: "	Favorece o metabolismo de gorduras³",
     },
     {
-      img: "./assets/images/ico-sha-07.png",
+      img: "/assets/images/ico-sha-07.png",
       text: "Contribui para a manutenção dos níveis de glicose e insulina no sangue. Níveis normais de insulina colaboram para o controle do apetite³",
     },
   ];
@@ -44,10 +45,13 @@ export default function Home() {
         <Video />
 
         <div className="bg-white flex items-center py-10 px-5 max-2md:flex-col">
-          <img
-            src="./assets/images/shape-control.webp"
+          <Image
+            src="/assets/images/shape-control.webp"
             alt="Embalagem shape control"
+            width={875}
+            height={783}
             className="max-w-[50%] max-2md:max-w-[90%]"
+            priority
           />
 
           <div className="flex flex-col justify-between w-full items-center gap-40 text-center">
@@ -69,24 +73,30 @@ export default function Home() {
                   <div className="flex gap-5 items-center max-xl:gap-3">
                     <span className="text-4xl max-xl:text-2xl">No</span>
 
-                    <img
-                      src="./assets/images/pix.png"
+                    <Image
+                      src="/assets/images/pix.png"
                       alt="pix"
-                      className="h-10 mb-2 max-xl:h-7"
+                      width={378}
+                      height={133}
+                      className="h-10 w-auto mb-2 max-xl:h-7"
                     />
-                    <img
-                      src="./assets/images/boleto-2.png"
+                    <Image
+                      src="/assets/images/boleto-2.png"
                       alt="boleto"
-                      className="h-10 mb-2 max-xl:h-7"
+                      width={300}
+                      height={134}
+                      className="h-10 w-auto mb-2 max-xl:h-7"
                     />
                   </div>
                 </div>
 
                 <div className="flex items-center gap-5 mt-7 max-xl:gap-3">
-                  <img
-                    src="./assets/images/cartao.png"
+                  <Image
+                    src="/assets/images/cartao.png"
                     alt="cartão"
-                    className="h-10 mb-1 max-xl:h-7"
+                    width={225}
+                    height={225}
+                    className="h-10 w-auto mb-1 max-xl:h-7"
                   />
 
                   <h3 className="text-4xl font-light max-xl:text-2xl">
@@ -222,9 +232,11 @@ export default function Home() {
             </div>
           </div>
 
-          <img
-            src="./assets/images/shape-control-04.png"
+          <Image
+            src="/assets/images/shape-control-04.png"
             alt="Produto shape control e uma laranja moro"
+            width={1122}
+            height={1122}
             className="w-1/2 h-full"
           />
         </div>
@@ -236,7 +248,12 @@ export default function Home() {
             </h3>
 
             <div className="w-[380px] max-lg:w-full max-lg:items-center max-lg:flex max-lg:flex-col">
-              <img src="./assets/images/morosil.png" alt="morosil logo" />
+              <Image
+                src="/assets/images/morosil.png"
+                alt="morosil logo"
+                width={300}
+                height={65}
+              />
 
               <p className="text-[22px] mt-3 font-herbalife-walsheim max-xl:text-[18px]">
                 Uma marca patenteada para comercializar o ativo obtido do suco
@@ -245,9 +262,11 @@ export default function Home() {
             </div>
 
             <div>
-              <img
-                src="./assets/images/letter-sha-1.png"
+              <Image
+                src="/assets/images/letter-sha-1.png"
                 alt="segurança, procedência e eficácia"
+                width={300}
+                height={174}
                 className="max-w-[260px]"
               />
 
@@ -265,9 +284,11 @@ export default function Home() {
                 Aprovado nas maiores autoridades regulatórias do mundo
               </p>
 
-              <img
-                src="./assets/images/bandeiras-2.png"
+              <Image
+                src="/assets/images/bandeiras-2.png"
                 alt="bandeiras: anvisa - brasil, fda eua, health canada, kfda - coreia"
+                width={394}
+                height={393}
                 className="w-[232px]"
               />
             </div>
@@ -296,9 +317,11 @@ export default function Home() {
               <li>Ácido ascórbico (vitamina C).</li>
             </ul>
 
-            <img
-              src="./assets/images/orange-2.png"
+            <Image
+              src="/assets/images/orange-2.png"
               alt="laranja mouro"
+              width={613}
+              height={601}
               className="w-[460px] mt-14 max-lg:w-80"
             />
           </div>
@@ -330,17 +353,21 @@ export default function Home() {
             </ul>
           </div>
 
-          <img
-            src="./assets/images/morosil-3.png"
-            alt=""
+          <Image
+            src="/assets/images/morosil-3.png"
+            alt="Morosil - antocianinas, flavonoides, vitamina C, ácidos hidroxicinâmicos - para ajudar a inibir a formação de novas células de gordura 4"
+            width={600}
+            height={498}
             className="w-[600px] max-w-[50%] h-full max-2md:min-w-[400px] max-2sm:min-w-[300px]"
           />
         </div>
 
         <div className="flex flex-col py-20 pt-24 gap-28 relative max-2md:pb-10 max-2md:pt-0 max-2md:gap-7">
-          <img
-            src="./assets/images/explore.png"
-            alt=""
+          <Image
+            src="/assets/images/explore.png"
+            alt="desenho de um olho"
+            width={100}
+            height={83}
             className="w-[100px] self-center absolute top-0 left-40 max-2md:static max-2md:w-[80px]"
           />
           <a
@@ -348,7 +375,12 @@ export default function Home() {
             className="w-[500px] self-center cursor-pointer max-2sm:w-[300px]"
             target="_blank"
           >
-            <img src="./assets/images/explore-shape.png" alt="" />
+            <Image
+              src="/assets/images/explore-shape.png"
+              alt="explore o rótulo do shape control"
+              width={500}
+              height={110}
+            />
           </a>
 
           <div className="flex px-[5vw] justify-between font-light gap-5 max-xl:px-[2vw] max-2md:flex-col">
@@ -376,20 +408,24 @@ export default function Home() {
               </div>
             </div>
 
-            <img
-              src="./assets/images/shape-nutrev.png"
-              alt=""
+            <Image
+              src="/assets/images/shape-nutrev.png"
+              alt="images de produtos herbalife"
+              width={300}
+              height={134}
               className="max-w-[750px] w-full max-xl:w-1/2 max-2md:self-center max-2md:w-[90%]"
             />
           </div>
         </div>
-
+        
         <div className="bg-cor-burgundy px-[5vw] pb-32 flex flex-col justify-between gap-20 max-lg:gap-20">
           <div className="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16">
             <div className="flex flex-col gap-20 max-lg:w-full">
-              <img
-                src="./assets/images/sha-10.png"
-                alt=""
+              <Image
+                src="/assets/images/sha-10.png"
+                alt="balão de fala com um ponto de interrogação"
+                width={150}
+                height={131}
                 className="w-[105px] max-lg:w-[80px] "
               />
 
@@ -423,9 +459,11 @@ export default function Home() {
 
           <div className="self-center flex justify-between w-full gap-5 max-lg:flex-col max-lg:items-center max-2md:text-center">
             <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <img
-                src="./assets/images/ico-m-1.png"
-                alt=""
+              <Image
+                src="/assets/images/ico-m-1.png"
+                alt="copo de bebida gelada com uma laranja"
+                width={138}
+                height={139}
                 className="w-[86px]"
               />
 
@@ -436,9 +474,11 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <img
-                src="./assets/images/ico-m-2.png"
-                alt=""
+              <Image
+                src="/assets/images/ico-m-2.png"
+                alt="shakeira da herbalife"
+                width={138}
+                height={139}
                 className="w-[86px]"
               />
 
@@ -449,9 +489,11 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <img
-                src="./assets/images/ico-m-3.png"
-                alt=""
+              <Image
+                src="/assets/images/ico-m-3.png"
+                alt="garfo, faca e prato"
+                width={138}
+                height={139}
                 className="w-[86px]"
               />
 

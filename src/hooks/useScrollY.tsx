@@ -1,14 +1,15 @@
 import { useSyncExternalStore } from "react";
 
-export default function useScrollY() {
+const getServerSnapshot = (): number => 0;
+
+function useScrollY() {
   const subscribe = (handleScrollChange: () => void) => {
     window.addEventListener("scroll", handleScrollChange);
-    
+
     return () => window.removeEventListener("scroll", handleScrollChange);
   };
 
-  const getSnapshot = () => window.scrollY;
-  const getServerSnapshot = () => 0;
+  const getSnapshot = (): number => window.scrollY;
 
   const scrollY = useSyncExternalStore(
     subscribe,
@@ -18,3 +19,5 @@ export default function useScrollY() {
 
   return scrollY;
 }
+
+export { getServerSnapshot, useScrollY };

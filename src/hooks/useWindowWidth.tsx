@@ -1,13 +1,14 @@
 import { useSyncExternalStore } from "react";
 
-export default function useWindowWidth() {
+const getServerSnapshot = (): number => 0;
+
+function useWindowWidth() {
   const subscribe = (handleResize: () => void) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   };
 
-  const getSnapshot = () => window.innerWidth;
-  const getServerSnapshot = () => 0;
+  const getSnapshot = (): number => window.innerWidth;
 
   const windowWidth = useSyncExternalStore(
     subscribe,
@@ -17,3 +18,5 @@ export default function useWindowWidth() {
 
   return windowWidth;
 }
+
+export { useWindowWidth, getServerSnapshot };
