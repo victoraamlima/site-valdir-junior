@@ -15,7 +15,7 @@ export default function KnowMoreBtn({ popUp }: { popUp?: boolean }) {
       href="https://wa.link/hvz4yq"
       target="_blank"
       rel="noopener noreferrer"
-      className={`bg-lime-700 text-white text-3xl pt-[24px] pb-[15px] px-16 w-full rounded-lg max-sm:px-10`}
+      className={`bg-lime-700 text-white text-3xl pt-[24px] pb-[15px] px-16 w-full rounded-lg text-nowrap max-2md:text-xl max-2md:w-min max-2md:pt-[20px] max-2md:pb-[11px] max-sm:px-10 `}
       style={popUp ? popUpCss : undefined}
     >
       Saiba Mais
