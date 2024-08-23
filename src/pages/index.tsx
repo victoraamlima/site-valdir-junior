@@ -9,28 +9,28 @@ import Image from "next/image";
 export default function Home() {
   let iconsSha = [
     {
+      img: "/assets/images/ico-sha-07.png",
+      text: "Contribui para a MANUTENÇÃO dos níveis de GLICOSE e INSULINA no sangue. Níveis normais de insulina colaboram para o CONTROLE DO APETITE³",
+    },
+    {
       img: "/assets/images/ico-sha-4.png",
-      text: "Com fitonutrientes antioxidantes",
+      text: "Com fitonutrientes ANTIOXIDANTES",
     },
     {
       img: "/assets/images/ico-sha-04.png",
-      text: "Potencializa os seus resultados no gerenciamento de peso",
+      text: "Potencializa os seus resultados no GERENCIAMENTO DE PESO¹",
     },
     {
       img: "/assets/images/ico-sha-05.png",
-      text: "Ajuda a perder a gordura corporal¹",
+      text: "Ajuda a PERDER a GORDURA corporal¹",
     },
     {
       img: "/assets/images/ico-sha-06.png",
-      text: "Pode ajudar a reduzir a circunferência do quadril e da cintura²",
+      text: "Pode ajudar a REDUZIR A CIRCUNFERÊNCIA do quadril e da cintura²",
     },
     {
       img: "/assets/images/ico-sha-08.png",
-      text: "	Favorece o metabolismo de gorduras³",
-    },
-    {
-      img: "/assets/images/ico-sha-07.png",
-      text: "Contribui para a manutenção dos níveis de glicose e insulina no sangue. Níveis normais de insulina colaboram para o controle do apetite³",
+      text: "FAVORECE o METABOLISMO de gorduras³",
     },
   ];
 
@@ -42,106 +42,36 @@ export default function Home() {
       <main>
         <Header />
 
-        <Video />
-
-        <div className="bg-white flex items-center py-10 px-5 max-2md:flex-col">
-          <Image
-            src="/assets/images/shape-control.webp"
-            alt="Embalagem shape control"
-            width={875}
-            height={783}
-            className="max-w-[50%] max-2md:max-w-[90%]"
-            priority
-          />
-
-          <div className="flex flex-col justify-between w-full items-center gap-40 text-center">
-            <div className="h-[650px] flex flex-col items-center justify-between border-2 border-gray-300 p-10 rounded-xl shadow-xl max-2md:h-[500px] relative">
-              <div>
-                <h2 className="text-7xl font-bold text-lime-700 max-xl:text-5xl max-md:text-3xl">
-                  Shape Control
-                </h2>
-
-                <p className="text-3xl font-light text-lime-800 max-xl:text-xl max-md:text-base">
-                  Aumenta sua energia e seu metabolismo.
-                </p>
-              </div>
-
-              <div>
-                <div className="text-left">
-                  <h2 className="text-7xl font-bold max-xl:text-5xl">R$ 305</h2>
-
-                  <div className="flex gap-5 items-center max-xl:gap-3">
-                    <span className="text-4xl max-xl:text-2xl">No</span>
-
-                    <Image
-                      src="/assets/images/pix.png"
-                      alt="pix"
-                      width={378}
-                      height={133}
-                      className="h-10 w-auto mb-2 max-xl:h-7"
-                    />
-                    <Image
-                      src="/assets/images/boleto-2.png"
-                      alt="boleto"
-                      width={300}
-                      height={134}
-                      className="h-10 w-auto mb-2 max-xl:h-7"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-5 mt-7 max-xl:gap-3">
-                  <Image
-                    src="/assets/images/cartao.png"
-                    alt="cartão"
-                    width={225}
-                    height={225}
-                    className="h-10 w-auto mb-1 max-xl:h-7"
-                  />
-
-                  <h3 className="text-4xl font-light max-xl:text-2xl">
-                    3x de R$ 100
-                  </h3>
-                </div>
-              </div>
-
-              <KnowMoreBtn />
-            </div>
-          </div>
-        </div>
-
-        {scrollY > elementTop - 150 && <KnowMoreBtn popUp={true} />}
-
         <div
           id="conheca-shape-control"
-          className="flex gap-[3.2vw] justify-between bg-cor-burgundy max-2md:flex-col max-2md:pt-10"
+          className="flex gap-[3.2vw] justify-between bg-cor-burgundy max-2md:flex-col max-2md:pt-10 max-2sm:pt-2 max-2sm:gap-2"
         >
-          <div className="flex-center flex-col min-w-[50%] text-white pl-[1.5vw] max-w-[590px] max-lg:w-[40%] max-2md:w-full max-2md:max-w-none max-2md:px-10 max-2md:text-center max-sm:px-3">
+          <div className="flex-center flex-col min-w-[50%] text-white pl-[1.5vw] max-w-[590px] max-lg:w-[40%] max-2md:w-full max-2md:max-w-none max-2md:px-5 max-2md:text-center max-2sm:px-2 max-sm:px-3">
             <div className="">
-              <h2 className="text-[65px] mb-3 leading-[1.1] max-xl:text-[42px] max-w-[600px] text-left">
-                <span className="mr-12 max-xl:mr-60 max-lg:mr-48 max-2md:mr-0">
-                  Conheça o{" "}
+              <h2 className="text-[65px] mb-3 leading-[1.1] max-w-[600px] text-left max-xl:text-[42px] max-2sm:text-3xl max-2sm:text-center max-2sm:mb-1">
+                <span className="font-bold mr-12 max-xl:mr-60 max-lg:mr-48 max-2md:mr-0">
+                  SHAPE CONTROL
                 </span>
-                <span className="font-bold">SHAPE CONTROL.</span>
               </h2>
 
-              <p className="text-3xl max-w-[485px] max-xl:text-[32px] font-light max-lg:text-[24px]">
+              <p className="text-3xl max-w-[485px] max-xl:text-[32px] font-light max-lg:text-[24px] max-2sm:text-xl">
                 Com apenas uma <span className="font-bold">cápsula</span> por
-                dia você ganha um aliado na perda das gordurinhas indesejadas e
-                na <span className="font-bold">redução de medidas.</span>
+                dia você ganha um aliado na perda das{" "}
+                <span className="font-bold">gordurinhas</span> indesejadas e na{" "}
+                <span className="font-bold">redução de medidas.</span>
               </p>
             </div>
           </div>
 
           <div
-            className="w-1/2 h-[600px] bg-cover bg-no-repeat max-2md:w-full max-2md:bg-center"
+            className="w-1/2 h-[600px] bg-cover bg-no-repeat max-2md:w-full max-2md:bg-center max-2sm:h-[250px]"
             style={{
               backgroundImage: "url('./assets/images/shape-control-1.png')",
             }}
           />
         </div>
 
-        <div className="flex gap-[3vw] justify-between max-2md:flex-col-reverse">
+        <div className="flex gap-[3vw] justify-between max-2md:flex-col-reverse max-2md:gap-0">
           <div
             className="bg-cover bg-no-repeat w-full min-w-[40%]"
             style={{
@@ -149,14 +79,14 @@ export default function Home() {
             }}
           />
 
-          <div className="flex-center flex-col pr-[2vw] py-16 gap-[3vw] max-2md:pr-0 max-2md:py-7 max-2md:gap-10">
-            <div className="flex flex-wrap gap-[1vw] justify-between max-2md:flex-col max-2md:items-center max-2md:text-center font-light">
+          <div className="flex-center flex-col pr-[2vw] py-16 gap-[3vw] max-2md:pr-0 max-2md:py-2 max-2md:gap-3">
+            <div className="flex flex-wrap gap-[1vw] justify-between max-2md:flex-col max-2md:gap-5 font-light">
               {iconsSha.map((icon, index) => {
                 return <InfoIcon key={index} icon={icon} />;
               })}
             </div>
 
-            <div className="text-xs font-light max-2md:px-5 max-md:text-[10px]">
+            <div className="text-xs font-light max-2md:px-2 max-2md:h-16 overflow-y-scroll max-md:text-[10px]">
               <p>
                 ¹Pode ajudar a apoiar um plano de controle de peso junto com um
                 estilo de vida saudável e uma dieta balanceada com controle de
@@ -191,13 +121,78 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="bg-white flex items-center justify-between py-10 px-2 max-2md:flex-col max-2md:py-2 max-2md:gap-2">
+          <div className="flex-center max-w-[50%] w-full max-2md:max-w-[90%]">
+            <Image
+              src="/assets/images/shape-control.png"
+              alt="Embalagem shape control"
+              width={402}
+              height={597}
+              className="object-contain max-xl:h-[500px] max-2md:h-[200px]"
+              priority
+            />
+          </div>
+
+          <div className="flex flex-col justify-between w-full max-w-[50%] items-center gap-40 text-center max-2md:max-w-none">
+            <div className="h-[650px] flex flex-col items-center justify-between border-2 border-gray-300 p-10 rounded-xl shadow-xl max-xl:h-[500px] max-2md:h-min max-2md:gap-10 max-2sm:w-MIN max-2sm:p-3 max-2sm:gap-3 relative">
+              <div>
+                <h2 className="text-7xl font-bold text-lime-700 max-xl:text-5xl max-md:text-3xl">
+                  Shape Control
+                </h2>
+
+                <p className="text-3xl font-light text-lime-800 max-xl:text-xl max-md:text-base">
+                  Aumenta sua energia e seu metabolismo.
+                </p>
+              </div>
+
+              <div>
+                <div className="text-left">
+                  <h2 className="text-7xl font-bold max-xl:text-4xl">R$ 305</h2>
+
+                  <div className="flex gap-5 items-center max-xl:gap-3">
+                    <span className="text-4xl max-xl:text-xl">No</span>
+
+                    <Image
+                      src="/assets/images/pix.png"
+                      alt="pix"
+                      width={378}
+                      height={133}
+                      className="h-10 w-auto mb-2 max-xl:h-5"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-5 mt-7 max-xl:gap-3 max-2md:mt-2">
+                  <Image
+                    src="/assets/images/cartao.png"
+                    alt="cartão"
+                    width={225}
+                    height={225}
+                    className="h-10 w-auto mb-1 max-xl:h-7"
+                  />
+
+                  <h3 className="text-4xl font-light max-xl:text-2xl max-2md:text-xl">
+                    3x de R$ 100
+                  </h3>
+                </div>
+              </div>
+
+              <KnowMoreBtn />
+            </div>
+          </div>
+        </div>
+
+        {scrollY > elementTop - 150 && <KnowMoreBtn popUp={true} />}
+
+        <Video />
+
         <div
-          className="flex w-full h-full min-h-[790px] justify-between items-center bg-cover bg-no-repeat max-xl:flex-col px-5"
+          className="flex w-full h-full min-h-[790px] px-5 justify-between items-center bg-cover bg-no-repeat max-xl:flex-col max-2md:px-2"
           style={{
             backgroundImage: "url('./assets/images/bg-shape-3.png')",
           }}
         >
-          <div className="text-white pl-[4vw] py-20 flex flex-col gap-6 w-1/2 max-xl:px-0 max-xl:w-full max-xl:items-center max-xl:text-center max-xl:py-10">
+          <div className="text-white pl-[4vw] py-20 flex flex-col gap-6 w-1/2 max-xl:px-0 max-xl:w-full max-xl:items-center max-xl:text-center max-xl:py-10 max-2md:py-4 max-2md:gap-4">
             <div>
               <h2 className="font-bold text-[45px] leading-[1] max-lg:text-[43px] max-sm:text-3xl">
                 SHAPE CONTROL,
@@ -237,12 +232,12 @@ export default function Home() {
             alt="Produto shape control e uma laranja moro"
             width={1122}
             height={1122}
-            className="w-1/2 h-full"
+            className="w-1/2 h-full max-2md:mb-2"
           />
         </div>
 
-        <div className="flex justify-between py-24 px-[15vw] max-2xl:px-[10vw] max-xl:px-[5vw] max-xl:py-16 max-lg:flex-col max-lg:items-center max-lg:gap-10">
-          <div className="flex flex-col gap-5 max-lg:items-center max-lg:text-center">
+        <div className="flex justify-between py-24 px-[15vw] max-2xl:px-[10vw] max-xl:px-[5vw] max-xl:py-16 max-lg:flex-col max-lg:items-center max-lg:gap-10 max-2md:py-2 max-2md:px-2 max-2md:gap-4">
+          <div className="flex flex-col gap-5 max-lg:items-center max-lg:text-center max-2md:gap-3">
             <h3 className="text-[40px] text-lime-600 font-bold max-xl:text-3xl">
               Elaborado com:
             </h3>
@@ -253,6 +248,7 @@ export default function Home() {
                 alt="morosil logo"
                 width={300}
                 height={65}
+                className="max-2md:max-w-[200px]"
               />
 
               <p className="text-[22px] mt-3 font-herbalife-walsheim max-xl:text-[18px]">
@@ -261,13 +257,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className="flex-center flex-col">
               <Image
                 src="/assets/images/letter-sha-1.png"
                 alt="segurança, procedência e eficácia"
                 width={300}
                 height={174}
-                className="max-w-[260px]"
+                className="max-w-[260px] max-2md:max-w-[200px] "
               />
 
               <p className="text-xs mt-3">
@@ -275,7 +271,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-[380px] max-lg:w-full flex flex-col gap-5 max-lg:items-center">
+            <div className="w-[380px] max-lg:w-full flex flex-col gap-5 max-lg:items-center max-2md:gap-3">
               <h3 className="text-[40px] text-lime-600 font-bold max-xl:text-3xl">
                 Segurança:
               </h3>
@@ -289,16 +285,16 @@ export default function Home() {
                 alt="bandeiras: anvisa - brasil, fda eua, health canada, kfda - coreia"
                 width={394}
                 height={393}
-                className="w-[232px]"
+                className="w-[232px] max-2md:w-[200px] "
               />
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 max-lg:items-center">
+          <div className="flex flex-col gap-5 max-lg:items-center max-2md:gap-3">
             <h3 className="text-[40px] text-lime-600 font-bold max-xl:text-3xl">
               Procedência:
             </h3>
-            <div className="text-2xl w-[450px] max-lg:w-full max-lg:text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px]">
+            <div className="text-2xl w-[450px] max-lg:w-full max-lg:text-center flex flex-col gap-8 font-herbalife-walsheim max-xl:text-[18px] max-2md:gap-3">
               <p>
                 Ativo natural obtido do suco das Laranjas Vermelhas Moro,
                 cultivadas ao redor do vulcão Etna na Sicília, Itália.
@@ -322,14 +318,16 @@ export default function Home() {
               alt="laranja mouro"
               width={613}
               height={601}
-              className="w-[460px] mt-14 max-lg:w-80"
+              className="w-[460px] mt-14 max-lg:w-80 max-2md:mt-0"
             />
           </div>
         </div>
 
-        <div className="bg-cor-burgundy flex py-20 px-[4.16vw] gap-[4.16vw] items-center max-lg:flex-col">
+        <div className="bg-cor-burgundy flex py-20 px-[4.16vw] gap-[4.16vw] items-center max-lg:flex-col max-2md:py-2 max-2md:px-2 max-2md:gap-3">
           <div className="text-white">
-            <h3 className="text-[40px] font-bold mb-3">Eficácia</h3>
+            <h3 className="text-[40px] font-bold mb-3 max-2md:mb-0">
+              Eficácia
+            </h3>
 
             <p className="font-herbalife-walsheim text-[22px] mb-2 max-2sm:text-xl">
               Mecanismo de ação:
@@ -362,7 +360,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col py-20 pt-24 gap-28 relative max-2md:pb-10 max-2md:pt-0 max-2md:gap-7">
+        <div className="flex flex-col py-20 pt-24 gap-28 relative max-2md:pb-3 max-2md:pt-0 max-2md:gap-3">
           <Image
             src="/assets/images/explore.png"
             alt="desenho de um olho"
@@ -417,10 +415,10 @@ export default function Home() {
             />
           </div>
         </div>
-        
-        <div className="bg-cor-burgundy px-[5vw] pb-32 flex flex-col justify-between gap-20 max-lg:gap-20">
-          <div className="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16">
-            <div className="flex flex-col gap-20 max-lg:w-full">
+
+        <div className="bg-cor-burgundy px-[5vw] pb-32 flex flex-col justify-between gap-20 max-lg:gap-20 max-2md:px-2 max-2md:gap-3">
+          <div className="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16 max-2md:gap-4">
+            <div className="flex flex-col gap-20 max-lg:w-full max-2md:gap-4">
               <Image
                 src="/assets/images/sha-10.png"
                 alt="balão de fala com um ponto de interrogação"
@@ -433,13 +431,13 @@ export default function Home() {
                 Em que momento consumir o Shape Control?
               </h3>
 
-              <div className="bg-white py-5 w-[625px] ml-[-96px] pl-24 rounded-e-3xl pr-64 max-xl:pr-0 max-xl:w-full  max-lg:self-start max-lg:ml-[-5vw] max-lg:pl-10">
-                <p className="text-[30px] text-green-600 font-bold">
+              <div className="bg-white py-5 w-[625px] ml-[-96px] pl-24 rounded-e-3xl pr-64 max-xl:pr-0 max-xl:w-full max-lg:self-start max-lg:ml-[-5vw] max-lg:pl-10 max-2md:py-2 max-2md:w-[70%] ">
+                <p className="text-[30px] text-green-600 font-bold max-2md:text-2xl ">
                   Sugestões de uso:
                 </p>
 
-                <p className="w-72 text-[33px] font-light max-lg:w-full">
-                  1 cápsula ao dia (todos os dias):
+                <p className="w-72 text-[33px] font-light max-lg:w-full max-2md:text-2xl">
+                  1 cápsula ao dia (todos os dias)
                 </p>
               </div>
             </div>
@@ -464,7 +462,7 @@ export default function Home() {
                 alt="copo de bebida gelada com uma laranja"
                 width={138}
                 height={139}
-                className="w-[86px]"
+                className="w-[86px] max-2md:w-[60px]"
               />
 
               <p className="text-xl text-white w-72 max-lg:w-full">
@@ -479,7 +477,7 @@ export default function Home() {
                 alt="shakeira da herbalife"
                 width={138}
                 height={139}
-                className="w-[86px]"
+                className="w-[86px] max-2md:w-[60px]"
               />
 
               <p className="text-xl text-white w-64 max-lg:w-full">
@@ -494,7 +492,7 @@ export default function Home() {
                 alt="garfo, faca e prato"
                 width={138}
                 height={139}
-                className="w-[86px]"
+                className="w-[86px] max-2md:w-[60px]"
               />
 
               <p className="text-xl text-white">Antes do almoço</p>
