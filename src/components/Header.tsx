@@ -14,7 +14,7 @@ export default function Header() {
         />
 
         <h1 className="text-7xl font-bold text-lime-700 max-xl:text-5xl max-2md:text-3xl">
-          Valdir Junior
+          Valdir Júnior
         </h1>
 
         <h2 className="ml-20 text-5xl font-light max-xl:text-3xl max-2md:ml-0 max-2md:text-xl">
