@@ -40,6 +40,23 @@ html {
   color: #fff;
 }
 
+.legal-text {
+  scrollbar-width: none;
+}
+
+@media (max-width: 880px) {
+  html,
+  body {
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
