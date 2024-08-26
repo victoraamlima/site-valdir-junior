@@ -8,7 +8,7 @@ interface ItemType {
 }
 
 interface ListType {
-  key: number;
+  id: number;
   item: ItemType;
   styleList: {
     li: string;
@@ -17,4 +17,13 @@ interface ListType {
   };
 }
 
-export type { ItemType, ListType };
+interface fontType {
+  id: number;
+  family: string;
+  url: string;
+  weight: string;
+  format: string;
+  style: string;
+}
+
+export type { ItemType, ListType, fontType };
