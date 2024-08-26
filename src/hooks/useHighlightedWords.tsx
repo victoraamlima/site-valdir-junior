@@ -26,7 +26,7 @@ export default function UseHighlightedWords(textInfo: ItemType) {
       {plainText.map((text, index) => (
         <>
           {text}
-          <span className={textInfo.highlight.type}>{words[index]}</span>
+          <span key={index} className={textInfo.highlight.type}>{words[index]}</span>
         </>
       ))}
     </>
