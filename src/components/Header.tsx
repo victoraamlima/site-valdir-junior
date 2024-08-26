@@ -2,19 +2,9 @@ import { getBaseUrl } from "@/utils/getBaseUrl";
 import Image from "next/image";
 
 export default function Header() {
-  console.log(process.env.NEXT_PUBLIC_REPO_NAME);
-
   return (
     <header className="flex justify-center py-16 px-3 relative items-center max-2md:py-3 max-2md:gap-0 max-2md:text-center">
       <div className="flex-center flex-col ml-20 max-2md:ml-0">
-        <Image
-          src="/assets/images/herbalife-logo.png"
-          alt="logo do instagram"
-          width={3808}
-          height={776}
-          className="w-60 mb-3 max-2md:w-36"
-          priority
-        />
         <Image
           src={getBaseUrl("/assets/images/herbalife-logo.png")}
           alt="logo do instagram"
@@ -40,7 +30,7 @@ export default function Header() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/assets/images/logo-whatsapp.png"
+            src={getBaseUrl("/assets/images/logo-whatsapp.png")}
             alt="logo do whatsapp"
             width={798}
             height={802}
@@ -55,7 +45,7 @@ export default function Header() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/assets/images/logo-instagram.png"
+            src={getBaseUrl("/assets/images/logo-instagram.png")}
             alt="logo do instagram"
             width={964}
             height={968}
