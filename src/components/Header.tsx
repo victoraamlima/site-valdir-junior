@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   console.log(process.env.NEXT_PUBLIC_BASE_PATH);
+  console.log(process.env.BASE_PATH);
 
   return (
     <header className="flex justify-center py-16 px-3 relative items-center max-2md:py-3 max-2md:gap-0 max-2md:text-center">
@@ -16,6 +17,14 @@ export default function Header() {
         />
         <Image
           src={`${process.env.NEXT_PUBLIC_BASE_PATH}assets/images/herbalife-logo.png`}
+          alt="logo do instagram"
+          width={3808}
+          height={776}
+          className="w-60 mb-3 max-2md:w-36"
+          priority
+        />
+        <Image
+          src={`${process.env.BASE_PATH}assets/images/herbalife-logo.png`}
           alt="logo do instagram"
           width={3808}
           height={776}
