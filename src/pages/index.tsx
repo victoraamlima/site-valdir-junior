@@ -211,7 +211,9 @@ export default function Home() {
           <div
             className="bg-cover bg-no-repeat w-full min-w-[40%]"
             style={{
-              backgroundImage: "url('./assets/images/shape-control-2.png')",
+              backgroundImage: `url(${getBaseUrl(
+                "/assets/images/shape-control-2.png"
+              )})`,
             }}
           />
 
@@ -221,6 +223,7 @@ export default function Home() {
                 return (
                   <List
                     key={index}
+                    id={index}
                     item={item}
                     styleList={{
                       li: "flex items-center gap-4 max-w-[50%] max-lg:max-w-full max-2md:px-2",
@@ -270,7 +273,7 @@ export default function Home() {
         <div className="bg-white flex items-center justify-between py-10 px-2 max-2md:flex-col max-2md:py-2 max-2md:gap-2">
           <div className="flex-center max-w-[50%] w-full max-2md:max-w-[90%]">
             <Image
-              src="/assets/images/shape-control.png"
+              src={getBaseUrl("/assets/images/shape-control.png")}
               alt="Embalagem shape control"
               width={402}
               height={597}
@@ -299,7 +302,7 @@ export default function Home() {
                     <span className="text-4xl max-xl:text-xl">No</span>
 
                     <Image
-                      src="/assets/images/pix.png"
+                      src={getBaseUrl("/assets/images/pix.png")}
                       alt="pix"
                       width={378}
                       height={133}
@@ -310,7 +313,7 @@ export default function Home() {
 
                 <div className="flex items-center gap-5 mt-7 max-xl:gap-3 max-2md:mt-2">
                   <Image
-                    src="/assets/images/cartao.png"
+                    src={getBaseUrl("/assets/images/cartao.png")}
                     alt="cartão"
                     width={225}
                     height={225}
@@ -380,6 +383,7 @@ export default function Home() {
                   return (
                     <List
                       key={index}
+                      id={index}
                       item={item}
                       styleList={{
                         li: "",
@@ -394,7 +398,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="/assets/images/shape-control-04.png"
+            src={getBaseUrl("/assets/images/shape-control-04.png")}
             alt="Produto shape control e uma laranja moro"
             width={1122}
             height={1122}
@@ -410,7 +414,7 @@ export default function Home() {
 
             <div className="w-[380px] max-lg:w-full max-lg:items-center max-lg:flex max-lg:flex-col">
               <Image
-                src="/assets/images/morosil.png"
+                src={getBaseUrl("/assets/images/morosil.png")}
                 alt="morosil logo"
                 width={300}
                 height={65}
@@ -425,7 +429,7 @@ export default function Home() {
 
             <div className="flex-center flex-col">
               <Image
-                src="/assets/images/letter-sha-1.png"
+                src={getBaseUrl("/assets/images/letter-sha-1.png")}
                 alt="segurança, procedência e eficácia"
                 width={300}
                 height={174}
@@ -447,7 +451,7 @@ export default function Home() {
               </p>
 
               <Image
-                src="/assets/images/bandeiras-2.png"
+                src={getBaseUrl("/assets/images/bandeiras-2.png")}
                 alt="bandeiras: anvisa - brasil, fda eua, health canada, kfda - coreia"
                 width={394}
                 height={393}
@@ -478,6 +482,7 @@ export default function Home() {
                 return (
                   <List
                     key={index}
+                    id={index}
                     item={item}
                     styleList={{
                       li: "",
@@ -490,7 +495,7 @@ export default function Home() {
             </ul>
 
             <Image
-              src="/assets/images/orange-2.png"
+              src={getBaseUrl("/assets/images/orange-2.png")}
               alt="laranja mouro"
               width={613}
               height={601}
@@ -514,6 +519,7 @@ export default function Home() {
                 return (
                   <List
                     key={index}
+                    id={index}
                     item={item}
                     styleList={{
                       li: "",
@@ -527,7 +533,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="/assets/images/morosil-3.png"
+            src={getBaseUrl("/assets/images/morosil-3.png")}
             alt="Morosil - antocianinas, flavonoides, vitamina C, ácidos hidroxicinâmicos - para ajudar a inibir a formação de novas células de gordura 4"
             width={600}
             height={498}
@@ -537,19 +543,19 @@ export default function Home() {
 
         <div className="flex flex-col py-20 pt-24 gap-28 relative max-2md:pb-3 max-2md:pt-0 max-2md:gap-3">
           <Image
-            src="/assets/images/explore.png"
+            src={getBaseUrl("/assets/images/explore.png")}
             alt="desenho de um olho"
             width={100}
             height={83}
             className="w-[100px] self-center absolute top-0 left-40 max-2md:static max-2md:w-[80px]"
           />
           <a
-            href="/assets/pdf/rotulo-shape-control.pdf"
+            href={getBaseUrl("/assets/pdf/rotulo-shape-control.pdf")}
             className="w-[500px] self-center cursor-pointer max-2sm:w-[300px]"
             target="_blank"
           >
             <Image
-              src="/assets/images/explore-shape.png"
+              src={getBaseUrl("/assets/images/explore-shape.png")}
               alt="explore o rótulo do shape control"
               width={500}
               height={110}
@@ -580,7 +586,7 @@ export default function Home() {
             </div>
 
             <Image
-              src="/assets/images/shape-nutrev.png"
+              src={getBaseUrl("/assets/images/shape-nutrev.png")}
               alt="images de produtos herbalife"
               width={300}
               height={134}
@@ -593,7 +599,7 @@ export default function Home() {
           <div className="flex justify-between items-end gap-4 max-lg:flex-col max-lg:items-center max-lg:gap-16 max-2md:gap-4">
             <div className="flex flex-col gap-20 max-lg:w-full max-2md:gap-4">
               <Image
-                src="/assets/images/sha-10.png"
+                src={getBaseUrl("/assets/images/sha-10.png")}
                 alt="balão de fala com um ponto de interrogação"
                 width={150}
                 height={131}
@@ -633,6 +639,7 @@ export default function Home() {
               return (
                 <List
                   key={index}
+                  id={index}
                   item={item}
                   styleList={{
                     li: "flex items-center gap-4 max-lg:flex-col max-lg:items-center",
