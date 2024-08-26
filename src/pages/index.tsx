@@ -1,36 +1,167 @@
 import KnowMoreBtn from "@/components/KnowMoreBtn";
 import Header from "@/components/Header";
-import InfoIcon from "@/components/InfoIcon";
+import List from "@/components/List";
 import Video from "@/components/Video";
 import { useScrollY } from "@/hooks/useScrollY";
 import useElementTop from "@/hooks/useElementTop";
 import Image from "next/image";
+import UseHighlightedWords from "@/hooks/useHighlightedWords";
+import { use } from "react";
 
 export default function Home() {
   let iconsSha = [
     {
       img: "/assets/images/ico-sha-07.png",
-      text: "Contribui para a MANUTENÇÃO dos níveis de GLICOSE e INSULINA no sangue. Níveis normais de insulina colaboram para o CONTROLE DO APETITE³",
+      text: "Contribui para a manutenção dos níveis de glicose e insulina* no sangue. Níveis normais de insulina colaboram para o controle do apetite³",
+      highlight: {
+        words: ["manutenção", "glicose", "insulina*", "controle do apetite"],
+        type: "font-bold",
+      },
     },
     {
       img: "/assets/images/ico-sha-4.png",
-      text: "Com fitonutrientes ANTIOXIDANTES",
+      text: "Com fitonutrientes antioxidantes",
+      highlight: {
+        words: ["antioxidantes"],
+        type: "font-bold",
+      },
     },
     {
       img: "/assets/images/ico-sha-04.png",
-      text: "Potencializa os seus resultados no GERENCIAMENTO DE PESO¹",
+      text: "Potencializa os seus resultados no gerenciamento de peso¹",
+      highlight: {
+        words: ["gerenciamento de peso"],
+        type: "font-bold",
+      },
     },
     {
       img: "/assets/images/ico-sha-05.png",
-      text: "Ajuda a PERDER a GORDURA corporal¹",
+      text: "Ajuda a perder a gordura corporal¹",
+      highlight: {
+        words: ["perder", "gordura"],
+        type: "font-bold",
+      },
     },
     {
       img: "/assets/images/ico-sha-06.png",
-      text: "Pode ajudar a REDUZIR A CIRCUNFERÊNCIA do quadril e da cintura²",
+      text: "Pode ajudar a reduzir a circunferência do quadril e da cintura²",
+      highlight: {
+        words: ["reduzir a circunferência"],
+        type: "font-bold",
+      },
     },
     {
       img: "/assets/images/ico-sha-08.png",
-      text: "FAVORECE o METABOLISMO de gorduras³",
+      text: "Favorece o metabolismo de gorduras³",
+      highlight: {
+        words: ["Favorece", "metabolismo"],
+        type: "font-bold",
+      },
+    },
+  ];
+
+  let list2 = [
+    {
+      img: "",
+      text: "Antocianinas",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Ácidos hidroxicinâmicos",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Ácido ascórbico (vitamina C).",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+  ];
+
+  let list3 = [
+    {
+      img: "",
+      text: "Pode ajudar a reduzir o estresse oxidativo¹.",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Pode ajudar a diminuir a formação de novas células de gordura².",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Pode ajudar a quebra de gordura³.",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Clinicamente testado para auxiliar na redução das circunferências da cintura, quadril e da gordura abdominal⁴.",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Ingrediente bioativo clinicamente testado para apoiar seu plano de perda de peso⁴.",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+    {
+      img: "",
+      text: "Ajuda a perder gordura abdominal⁴.",
+      highlight: {
+        words: [""],
+        type: "",
+      },
+    },
+  ];
+
+  let list4 = [
+    {
+      img: "/assets/images/ico-m-1.png",
+      text: "Pela manhã, com o junto com o seu Shot da Imunidade",
+      highlight: {
+        words: ["Shot da Imunidade"],
+        type: "font-bold",
+      },
+    },
+    {
+      img: "/assets/images/ico-m-2.png",
+      text: "No café da manhã, com o seu Shake Herbalife",
+      highlight: {
+        words: ["Shake Herbalife"],
+        type: "font-bold",
+      },
+    },
+    {
+      img: "/assets/images/ico-m-3.png",
+      text: "Antes do almoço",
+      highlight: {
+        words: [""],
+        type: "",
+      },
     },
   ];
 
@@ -48,17 +179,19 @@ export default function Home() {
         >
           <div className="flex-center flex-col min-w-[50%] text-white pl-[1.5vw] max-w-[590px] max-lg:w-[40%] max-2md:w-full max-2md:max-w-none max-2md:px-5 max-2md:text-center max-2sm:px-2 max-sm:px-3">
             <div className="">
-              <h2 className="text-[65px] mb-3 leading-[1.1] max-w-[600px] text-left max-xl:text-[42px] max-2sm:text-3xl max-2sm:text-center max-2sm:mb-1">
-                <span className="font-bold mr-12 max-xl:mr-60 max-lg:mr-48 max-2md:mr-0">
-                  SHAPE CONTROL
-                </span>
+              <h2 className="text-[65px] mb-3 leading-[1.1] max-w-[600px] text-left font-bold mr-12 max-xl:mr-60 max-xl:text-[42px] max-lg:mr-48 max-2md:mr-0 max-2md:text-center max-2md:max-w-none max-2sm:text-3xl max-2sm:mb-1">
+                SHAPE CONTROL
               </h2>
 
-              <p className="text-3xl max-w-[485px] max-xl:text-[32px] font-light max-lg:text-[24px] max-2sm:text-xl">
-                Com apenas uma <span className="font-bold">cápsula</span> por
-                dia você ganha um aliado na perda das{" "}
-                <span className="font-bold">gordurinhas</span> indesejadas e na{" "}
-                <span className="font-bold">redução de medidas.</span>
+              <p className="text-3xl max-w-[485px] font-light max-xl:text-[32px] max-lg:text-[24px] max-2md:max-w-none max-2sm:text-xl">
+                {UseHighlightedWords({
+                  img: "",
+                  text: "Com apenas uma cápsula por dia você ganha um aliado na perda das gordurinhas indesejadas e na redução de medidas.",
+                  highlight: {
+                    words: ["cápsula", "gordurinhas", "redução de medidas"],
+                    type: "font-bold",
+                  },
+                })}
               </p>
             </div>
           </div>
@@ -80,11 +213,21 @@ export default function Home() {
           />
 
           <div className="flex-center flex-col pr-[2vw] py-16 gap-[3vw] max-2md:pr-0 max-2md:py-2 max-2md:gap-3">
-            <div className="flex flex-wrap gap-[1vw] justify-between max-2md:flex-col max-2md:gap-5 font-light">
-              {iconsSha.map((icon, index) => {
-                return <InfoIcon key={index} icon={icon} />;
+            <ul className="flex flex-wrap gap-[1vw] justify-between max-2md:flex-col max-2md:gap-5 font-light">
+              {iconsSha.map((item, index) => {
+                return (
+                  <List
+                    key={index}
+                    item={item}
+                    styleList={{
+                      li: "flex items-center gap-4 max-w-[50%] max-lg:max-w-full max-2md:px-2",
+                      img: "w-20 h-20 max-2xl:w-16 max-2xl:h-16 max-2md:w-14 max-2md:h-14 max-md:w-7 max-md:h-7",
+                      p: "max-2xl:text-xl",
+                    }}
+                  />
+                );
               })}
-            </div>
+            </ul>
 
             <div className="text-xs font-light max-2md:px-2 max-2md:h-16 overflow-y-scroll max-md:text-[10px]">
               <p>
@@ -204,25 +347,43 @@ export default function Home() {
 
             <div className="bg-white max-w-[580px] rounded-e-xl ml-[-4vw] p-5 pl-[5vw] max-xl:self-start max-xl:max-w-[80%]  max-sm:max-w-[95%] max-sm:ml-[-20px]">
               <p className="text-black text-2xl max-lg:text-[20px]">
-                Conheça mais sobre os benefícios do extrato obtido a partir da
-                <span className="text-green-500 font-bold"> laranja moro</span>.
+                {UseHighlightedWords({
+                  img: "",
+                  text: "Conheça mais sobre os benefícios do extrato obtido a partir da laranja moro",
+                  highlight: {
+                    words: ["laranja moro", "benefícios"],
+                    type: "text-green-500 font-bold",
+                  },
+                })}
               </p>
             </div>
 
             <div className="max-w-[615px] flex flex-col gap-3 font-light max-xl:max-w-none max-xl:items-center">
               <p className="text-2xl max-sm:text-xl">
-                Ativo natural obtido do suco das Laranjas Vermelhas Moro,
-                cultivadas ao redor do vulcão Etna na Sicília, Itália. O solo
-                vulcânico, rico em nutrientes, e as condições climáticas da
-                região favorecem a obtenção do ativo com um alto teor de
-                antioxidantes específicos,{" "}
-                <span className="font-bold">como</span>:
+                {UseHighlightedWords({
+                  img: "",
+                  text: " Ativo natural obtido do suco das Laranjas Vermelhas Moro,cultivadas ao redor do vulcão Etna na Sicília, Itália. O solo vulcânico, rico em nutrientes, e as condições climáticas da região favorecem a obtenção do ativo com um alto teor de antioxidantes específicos, como:",
+                  highlight: {
+                    words: ["como:"],
+                    type: "font-bold",
+                  },
+                })}
               </p>
 
               <ul className="text-2xl li-custom li-1 pl-2 max-xl:text-left max-xl:w-auto max-sm:text-xl">
-                <li>Antocianinas</li>
-                <li>Ácidos hidroxicinâmicos</li>
-                <li>Ácido ascórbico (vitamina C).</li>
+                {list2.map((item, index) => {
+                  return (
+                    <List
+                      key={index}
+                      item={item}
+                      styleList={{
+                        li: "",
+                        img: "",
+                        p: "text-2xl max-sm:text-xl",
+                      }}
+                    />
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -308,9 +469,19 @@ export default function Home() {
             </div>
 
             <ul className="text-2xl li-custom li-2 pl-2 font-herbalife-walsheim max-xl:text-[18px]">
-              <li>Antocianinas</li>
-              <li>Ácidos hidroxicinâmicos</li>
-              <li>Ácido ascórbico (vitamina C).</li>
+              {list2.map((item, index) => {
+                return (
+                  <List
+                    key={index}
+                    item={item}
+                    styleList={{
+                      li: "",
+                      img: "",
+                      p: "",
+                    }}
+                  />
+                );
+              })}
             </ul>
 
             <Image
@@ -334,20 +505,19 @@ export default function Home() {
             </p>
 
             <ul className="font-herbalife-walsheim text-[22px] li-custom li-2 pl-2 flex flex-col gap-3 max-2sm:text-xl">
-              <li>Pode ajudar a reduzir o estresse oxidativo¹.</li>
-              <li>
-                Pode ajudar a diminuir a formação de novas células de gordura².
-              </li>
-              <li>Pode ajudar a quebra de gordura³.</li>
-              <li>
-                Clinicamente testado para auxiliar na redução das
-                circunferências da cintura, quadril e da gordura abdominal⁴.
-              </li>
-              <li>
-                Ingrediente bioativo clinicamente testado para apoiar seu plano
-                de perda de peso⁴.
-              </li>
-              <li>Ajuda a perder gordura abdominal⁴.</li>
+              {list3.map((item, index) => {
+                return (
+                  <List
+                    key={index}
+                    item={item}
+                    styleList={{
+                      li: "",
+                      img: "",
+                      p: "",
+                    }}
+                  />
+                );
+              })}
             </ul>
           </div>
 
@@ -384,16 +554,14 @@ export default function Home() {
           <div className="flex px-[5vw] justify-between font-light gap-5 max-xl:px-[2vw] max-2md:flex-col">
             <div>
               <p className="text-xl max-w-[495px] mb-5 max-2md:max-w-none max-2md:text-center">
-                Experimente combinar o{" "}
-                <span className="text-green-500 font-bold mr-32 max-xl:mr-[108px] max-lg:mr-[0px]">
-                  Shape Control
-                </span>{" "}
-                com outros produtos da{" "}
-                <span className="text-green-500 font-bold mr-40 max-xl:mr-[160px] max-lg:mr-[0px]">
-                  Herbalife
-                </span>{" "}
-                para potencializar ainda mais seus resultados. Temos uma linha
-                completa de produtos à sua disposição.
+                {UseHighlightedWords({
+                  img: "",
+                  text: "Experimente combinar o Shape Control com outros produtos da Herbalife para potencializar ainda mais seus resultados. Temos uma linha completa de produtos à sua disposição.",
+                  highlight: {
+                    words: ["Shape Control", "Herbalife"],
+                    type: "text-green-500 font-bold mr-32 max-xl:mr-[108px] max-lg:mr-[0px]",
+                  },
+                })}
               </p>
 
               <div className="bg-cor-burgundy text-white py-5 text-[21px] ml-[-5vw] pl-[5vw] rounded-e-3xl pr-[15vw] max-xl:pr-0">
@@ -455,49 +623,21 @@ export default function Home() {
             </video>
           </div>
 
-          <div className="self-center flex justify-between w-full gap-5 max-lg:flex-col max-lg:items-center max-2md:text-center">
-            <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <Image
-                src="/assets/images/ico-m-1.png"
-                alt="copo de bebida gelada com uma laranja"
-                width={138}
-                height={139}
-                className="w-[86px] max-2md:w-[60px]"
-              />
-
-              <p className="text-xl text-white w-72 max-lg:w-full">
-                Pela manhã, com o junto com o seu{" "}
-                <span className="font-bold">Shot da Imunidade</span>
-              </p>
-            </div>
-
-            <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <Image
-                src="/assets/images/ico-m-2.png"
-                alt="shakeira da herbalife"
-                width={138}
-                height={139}
-                className="w-[86px] max-2md:w-[60px]"
-              />
-
-              <p className="text-xl text-white w-64 max-lg:w-full">
-                No café da manhã, com o seu{" "}
-                <span className="font-bold">Shake Herbalife</span>
-              </p>
-            </div>
-
-            <div className="flex items-center gap-4 max-lg:flex-col max-lg:items-center">
-              <Image
-                src="/assets/images/ico-m-3.png"
-                alt="garfo, faca e prato"
-                width={138}
-                height={139}
-                className="w-[86px] max-2md:w-[60px]"
-              />
-
-              <p className="text-xl text-white">Antes do almoço</p>
-            </div>
-          </div>
+          <ul className="self-center flex justify-between w-full gap-5 max-lg:flex-col max-lg:items-center max-2md:text-center">
+            {list4.map((item, index) => {
+              return (
+                <List
+                  key={index}
+                  item={item}
+                  styleList={{
+                    li: "flex items-center gap-4 max-lg:flex-col max-lg:items-center",
+                    img: "w-[86px] max-2md:w-[60px]",
+                    p: "text-xl text-white w-72 max-lg:w-full",
+                  }}
+                />
+              );
+            })}
+          </ul>
         </div>
       </main>
     </>
