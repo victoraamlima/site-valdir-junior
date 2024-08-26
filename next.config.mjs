@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/site-valdir-junior',
+  basePath: process.env.NEXT_PUBLIC_REPO_NAME,
 };
 
 export default nextConfig;

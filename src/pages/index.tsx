@@ -7,6 +7,7 @@ import useElementTop from "@/hooks/useElementTop";
 import Image from "next/image";
 import UseHighlightedWords from "@/hooks/useHighlightedWords";
 import { use } from "react";
+import { getBaseUrl } from "@/utils/getBaseUrl";
 
 export default function Home() {
   let iconsSha = [
@@ -199,7 +200,9 @@ export default function Home() {
           <div
             className="w-1/2 h-[600px] bg-cover bg-no-repeat max-2md:w-full max-2md:bg-center max-2sm:h-[250px]"
             style={{
-              backgroundImage: "url('./assets/images/shape-control-1.png')",
+              backgroundImage: `url(${getBaseUrl(
+                "/assets/images/shape-control-1.png"
+              )})`,
             }}
           />
         </div>
@@ -332,7 +335,9 @@ export default function Home() {
         <div
           className="flex w-full h-full min-h-[790px] px-5 justify-between items-center bg-cover bg-no-repeat max-xl:flex-col max-2md:px-2"
           style={{
-            backgroundImage: "url('./assets/images/bg-shape-3.png')",
+            backgroundImage: `url(${getBaseUrl(
+              "/assets/images/bg-shape-3.png"
+            )})`,
           }}
         >
           <div className="text-white pl-[4vw] py-20 flex flex-col gap-6 w-1/2 max-xl:px-0 max-xl:w-full max-xl:items-center max-xl:text-center max-xl:py-10 max-2md:py-4 max-2md:gap-4">
