@@ -1,40 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Site do Valdir Júnior
 
-## Getting Started
+Bem-vindo ao repositório do site do Valdir Júnior. Este projeto é uma representação do trabalho como Consultor Independente Herbalife, abrangendo tanto o front-end quanto o back-end. Aqui, você encontrará detalhes sobre o site, as tecnologias utilizadas, e como entrar em contato.
 
-First, run the development server:
+> Link para o [Deploy](https://valdirjuniorhbl.github.io/shape-control/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+> Link para o [Repositório](https://github.com/victoraamlima/site-valdir-junior)
+
+## Tecnologias Utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- E mais...
+
+## Linguagens
+
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+
+## Tecnologias utilizadas
+
+- Next.js
+- Tailwind CSS
+- Jest
+- React Testing Library
+- Node.js
+
+## Tópicos
+
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Rodando o Projeto Localmente](#rodando-o-projeto-localmente)
+- [Contribuições](#contribuições)
+- [Contato](#contato)
+
+## Sobre o Projeto
+
+Este site foi construído usando Next.js, React, TypeScript, Tailwind CSS, e outras tecnologias. O objetivo é mostrar um pouco da trajetória como Consultor Independente Herbalife, destacando produtos com descrições detalhadas, imagens do resultado final, as tecnologias utilizadas, e links para o site e código-fonte.
+
+### Funcionalidades
+
+- **Navegação Intuitiva:** Acesse facilmente todas as seções do site, incluindo produtos, sobre mim, e contato.
+- **Produtos Detalhados:** Cada produto inclui uma descrição, tecnologias utilizadas, imagens, e links para mais informações.
+- **Contato:** Informações de contato disponíveis através de ícones de redes sociais e e-mail.
+
+## Pré-requisitos
+
+### Node.js
+
+[Node.js](https://nodejs.org/en/download/) é uma plataforma open source para desenvolvimento de aplicações em JavaScript fora do navegador, utilizado para construir aplicações de alta performance e escalabilidade em servidores web. Ele utiliza a engine JavaScript V8 e possui uma vasta biblioteca de módulos disponíveis que facilitam o desenvolvimento de aplicações modernas.
+
+## Rodando o Projeto Localmente
+
+Para executar este projeto em sua máquina local, siga os passos abaixo:
+
+1. Clone o repositório:
+
+```git
+git clone https://github.com/victoraamlima/site-valdir-junior.git
+```
+2. Instale as dependências:
+
+```git
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Inicie o servidor de desenvolvimento:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```git
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Isso irá abrir o projeto no navegador padrão em http://localhost:3000.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> Isso irá abrir o projeto no navegador padrão em [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contribuições
+Contribuições são sempre bem-vindas! Por favor, leia o guia de contribuições para saber como contribuir para este projeto.
 
-## Learn More
+Contato
+GitHub: https://github.com/victoraamlima
 
-To learn more about Next.js, take a look at the following resources:
+LinkedIn: https://www.linkedin.com/in/victor-meireles-dev/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+E-mail: victoraamlima@gmail.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Agradeço pela visita ao meu site. Fique à vontade para entrar em contato comigo para qualquer informação adicional.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
